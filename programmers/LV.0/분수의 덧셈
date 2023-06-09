@@ -1,0 +1,15 @@
+// 최대 공약수 구하기
+const getGCD = (a, b) => {
+    let gcd = a % b === 0 ? b : getGCD(b, a % b);
+    return gcd;
+}
+
+function solution(numer1, denom1, numer2, denom2) {
+    
+    let mlclr = numer1 * denom2 + numer2 * denom1;
+    let dnmnt = denom1 * denom2;
+    const gcd = getGCD(mlclr, dnmnt);
+    
+    return [mlclr / gcd, dnmnt / gcd]
+
+}
