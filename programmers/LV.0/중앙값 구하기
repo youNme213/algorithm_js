@@ -1,0 +1,9 @@
+function solution(array) {
+    // 오름차순 정렬
+    const newArray = array.sort((a, b) => a - b);
+    
+    // 중간 번호 구하기
+    const minNum = Math.round(newArray.length / 2);
+
+    return newArray[minNum - 1];
+}
