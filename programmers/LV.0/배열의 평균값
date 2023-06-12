@@ -1,0 +1,10 @@
+const solution = function(numbers) {
+    let sum = 0;
+    let answer, i;
+
+    for (i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    return answer = sum / i;
+}
