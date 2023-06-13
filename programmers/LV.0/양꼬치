@@ -1,0 +1,12 @@
+function solution(n, k) {
+    const lambPrice = 12000;
+    const drinkPrice = 2000;
+    const freeDrinkNum = Math.floor(n / 10);
+    let totalPrice = 0;
+
+    totalPrice += lambPrice * n;
+    totalPrice += drinkPrice * k;
+    totalPrice -= drinkPrice * freeDrinkNum;
+
+    return totalPrice;
+}
