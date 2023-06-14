@@ -1,0 +1,6 @@
+function solution(money) {
+    const iceAmePrice = 5500;
+    const iceAmeBuyNum = Math.floor(money / iceAmePrice);
+    const cashBalance = money - iceAmePrice * iceAmeBuyNum;
+    return [iceAmeBuyNum, cashBalance];
+}
