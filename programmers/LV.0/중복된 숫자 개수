@@ -1,0 +1,10 @@
+let arrNum = 0;
+
+function solution(array, n) {
+    for (let arrEl of array){
+        if (arrEl === n){
+            arrNum += 1;
+        }
+    }
+    return arrNum;
+}
