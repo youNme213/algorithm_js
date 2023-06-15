@@ -1,0 +1,9 @@
+function solution(sides) {
+    const longLength = Math.max(...sides);
+    const lengthSum = sides.reduce((a, b) => (a + b));
+    const lengthRemainSum = lengthSum - longLength;
+
+    let answer = longLength < lengthRemainSum ? 1 : 2;
+
+    return answer;
+}
