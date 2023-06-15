@@ -1,0 +1,14 @@
+function solution(dot) {
+    let dstngPsngn1 = dot[0] < 0 ? "-" : "+";
+    let dstngPsngn2 = dot[1] < 0 ? "-" : "+";
+
+    if (dstngPsngn1 === "+" && dstngPsngn2 === "+"){
+        return 1;
+    } else if(dstngPsngn1 === "-" && dstngPsngn2 === "+"){
+        return 2;
+    } else if(dstngPsngn1 === "-" && dstngPsngn2 === "-"){
+        return 3;
+    } else if(dstngPsngn1 === "+" && dstngPsngn2 === "-"){
+        return 4;
+    }
+}
