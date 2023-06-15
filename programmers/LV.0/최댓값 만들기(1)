@@ -1,0 +1,6 @@
+function solution(numbers) {
+    const numberArr = numbers.sort((a, b) => a - b);
+    const numberArrLength = numberArr.length;
+    const answer = numberArr[numberArrLength - 1] * numberArr[numberArrLength - 2];
+    return answer;
+}
