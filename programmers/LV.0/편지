@@ -1,0 +1,4 @@
+function solution(message) {
+    const numberCharacters = message.length;
+    return numberCharacters * 2;
+}
