@@ -1,0 +1,4 @@
+function solution(n) {
+    const slicePizza = 7;
+    return Math.ceil(n / slicePizza)
+}
