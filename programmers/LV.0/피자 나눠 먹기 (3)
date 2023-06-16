@@ -1,0 +1,10 @@
+function solution(slice, n) {
+    let numberPizzas = 0;
+    if (n % slice === 0){
+        numberPizzas = Math.floor(n / slice);
+    } else{
+        numberPizzas = Math.floor(n / slice);
+        numberPizzas += 1;
+    }
+    return numberPizzas;
+}
