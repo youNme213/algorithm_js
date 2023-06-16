@@ -1,0 +1,8 @@
+function solution(strlist) {
+    let newArray = [];
+    for (let i = 0; i < strlist.length; i++){
+        newArray = newArray.concat(strlist[i].length);
+    }
+
+    return newArray
+}
