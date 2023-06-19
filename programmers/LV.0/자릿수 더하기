@@ -1,0 +1,11 @@
+function solution (n){
+    let newArr = (n + "" ).split("");
+    let newNumArr = newArr.map(Number);
+    let sum = 0;
+
+    for (let i = 0; i < newNumArr.length; i++) {
+        sum += newNumArr[i];
+    }
+
+    return sum;
+}
