@@ -1,0 +1,9 @@
+function solution(n) {
+    let newArr = [];
+    for (let i = n; i > 0; i--){
+        if (i % 2 === 1){
+            newArr.push(i)
+        }
+    }
+    return newArr.sort((a, b) => a - b);
+}
