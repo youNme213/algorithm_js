@@ -1,0 +1,15 @@
+// 숫자 판별
+function solution(my_string) {
+    const regex = /[^0-9]/g;
+    const result = my_string.replace(regex, "");
+
+    return numSum(result);
+}
+
+// 숫자 합계
+function numSum(result){
+    const answer = result
+                        .split("")
+                        .reduce((acc, cur) => acc + Number(cur), 0);
+    return answer;
+}
