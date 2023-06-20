@@ -1,0 +1,7 @@
+function solution(n, t) {
+    let bacterialCount = n;
+    for(let i = 0; i < t; i++){
+        bacterialCount *= 2;
+    }
+    return bacterialCount;
+}
