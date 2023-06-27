@@ -1,0 +1,4 @@
+function solution(box, n) {
+    const newBox = box.map(a => Math.floor(a / n));
+    return newBox[0] * newBox[1] * newBox[2];
+}
