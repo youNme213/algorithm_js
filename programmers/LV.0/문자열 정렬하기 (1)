@@ -1,0 +1,6 @@
+function solution(my_string) {
+    const numbers = my_string
+                            .match(/\d/g)
+                            .map(Number);
+    return numbers.sort((a, b) => a - b);
+}
