@@ -1,0 +1,39 @@
+function solution(age) {
+    const ageArr = [...String(age)];
+    const newAge = [];
+    for (let arr of ageArr) {
+        switch(arr){
+            case "0":
+                newAge.push("a");
+                break;
+            case "1":
+                newAge.push("b");
+                break;
+            case "2":
+                newAge.push("c");
+                break;
+            case "3":
+                newAge.push("d");
+                break;
+            case "4":
+                newAge.push("e");
+                break;
+            case "5":
+                newAge.push("f");
+                break;
+            case "6":
+                newAge.push("g");
+                break;
+            case "7":
+                newAge.push("h");
+                break;
+            case "8":
+                newAge.push("i");
+                break;
+            case "9":
+                newAge.push("j");
+                break;
+        }
+    }
+    return newAge.join('');
+}
