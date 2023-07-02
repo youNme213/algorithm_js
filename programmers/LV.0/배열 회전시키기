@@ -1,0 +1,15 @@
+function solution(numbers, direction) {
+    const firstArr = numbers.at(0);
+    const lastArr = numbers.at(-1);
+    switch(direction){
+        case "left":
+            numbers.shift();
+            numbers.push(firstArr);
+            break;
+        case "right":
+            numbers.pop();
+            numbers.unshift(lastArr);
+            break;
+    }
+    return numbers;
+}
