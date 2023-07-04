@@ -1,0 +1,5 @@
+function solution(order) {
+    const newOrder = String(order).split('');
+    const ordNum = newOrder.filter(ord => ord % 3 === 0 && ord !== "0");
+    return ordNum.length;
+}
