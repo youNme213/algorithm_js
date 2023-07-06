@@ -1,0 +1,6 @@
+function solution(num, k) {
+    const newNum = String(num).split('');
+    const stringK = String(k);
+    const index = newNum.indexOf(stringK);
+    return index === -1 ? index : index + 1;
+}
