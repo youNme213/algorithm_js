@@ -1,0 +1,8 @@
+function solution(my_string, num1, num2) {
+  const num1String = my_string[num1];
+  const num2String = my_string[num2];
+  let answer = my_string;
+  answer = answer.substring(0, num1) + num2String + answer.substring(num1 + 1);
+  answer = answer.substring(0, num2) + num1String + answer.substring(num2 + 1);
+  return answer;
+}
