@@ -1,0 +1,16 @@
+function solution(n) {
+    return getLCM(n, 6) / 6;
+}
+
+function getLCM(a, b) {
+    let max = Math.max(a, b);
+    let min = Math.min(a, b);
+    let multiply = max;
+
+    while (true) {
+        if (multiply % min === 0) {
+            return multiply;
+        }
+        multiply += max;
+    }
+}
