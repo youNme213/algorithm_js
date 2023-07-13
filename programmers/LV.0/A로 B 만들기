@@ -1,0 +1,10 @@
+function solution(before, after) {
+    const newBefore = before.split('').sort().join('');
+    const newAfter = after.split('').sort().join('');
+
+    if (newBefore === newAfter){
+        return 1;
+    } else{
+        return 0;
+    }
+}
