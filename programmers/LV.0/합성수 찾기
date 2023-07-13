@@ -1,5 +1,4 @@
 function solution(n) {
-    let array = [];
     let answer = [];
     for (let i = 1; i <= n; i++) {
         let count = 0;
