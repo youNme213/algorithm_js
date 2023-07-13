@@ -1,0 +1,11 @@
+function solution(num_list, n) {
+    let answer = [];
+    for (let i = 0; i < num_list.length / n; i++){
+        const start = i * n;
+        const end = (i + 1) * n;
+        const chunk = num_list.slice(start, end);
+
+        answer.push(chunk);
+    }
+    return answer;
+}
