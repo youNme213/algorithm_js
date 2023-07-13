@@ -1,0 +1,9 @@
+function solution(i, j, k) {
+    let count = 0;
+
+    for (let n = i; n <= j; n++){
+        count += String(n).split('').filter(num => num === String(k)).length;
+    }
+
+    return count;
+}
