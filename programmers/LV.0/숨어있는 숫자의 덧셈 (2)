@@ -1,0 +1,12 @@
+function solution(my_string) {
+    let sum = 0;
+    const regex_num = /\d+/g;
+    const numbers = my_string.match(regex_num);
+
+    if (numbers){
+        for (let i = 0; i < numbers.length; i++){
+            sum += parseInt(numbers[i]);
+        }
+    }
+    return sum;
+}
