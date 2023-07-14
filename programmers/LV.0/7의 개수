@@ -1,0 +1,6 @@
+function solution(array) {
+    const newArray = String(array).split('');
+    const result = newArray.filter(arr => arr === '7');
+
+    return result.length;
+}
