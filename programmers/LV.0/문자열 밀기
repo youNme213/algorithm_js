@@ -1,0 +1,21 @@
+function solution(A, B) {
+    const newA = [...A];
+    let count = 0;
+
+    if(A === B){
+        count;
+    } else{
+        for (let i = 0; i < A.length; i++){
+            newA.unshift(newA.pop());
+            count++;
+            if (newA.join('') === B){
+                return count;
+            }
+            if(count === A.length){
+                return -1;
+            }
+        }
+    }
+
+    return count;
+}
