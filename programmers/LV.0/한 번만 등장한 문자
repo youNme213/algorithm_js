@@ -1,0 +1,15 @@
+function solution(s) {
+    let duplicateString = [];
+    const newString = s.split('').sort();
+    console.log(newString)
+    for (let i = 0; i < newString.length; i++){
+        if(newString[i] === newString[i + 1]){
+            duplicateString.push(newString[i])
+        }
+    }
+    duplicateString = [...new Set(duplicateString)];
+    
+    let answer = newString.filter(item => !duplicateString.includes(item));
+    answer = answer.join().replace(/,/g, "");
+    return answer;
+}
