@@ -1,0 +1,17 @@
+function solution(id_pw, db) {
+    const id = String(id_pw).split(',')[0];
+    const pw = String(id_pw).split(',')[1];
+    let answer;
+
+    for(let i = 0; i < db.length; i++){
+        if((db[i][0] == id) && (db[i][1] == pw)){
+           answer = 'login';
+        } else if((db[i][0] == id) && (db[i][1] != pw)){
+            answer = 'wrong pw';
+        } else if ((db[i][0] != id) && (db[i][1] != pw)){
+            answer = 'fail';
+        }
+    }
+
+    return answer;
+}
