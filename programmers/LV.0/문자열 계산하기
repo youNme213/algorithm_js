@@ -1,0 +1,17 @@
+function solution(my_string) {
+    const newString = my_string.split(' ');
+    let result = parseInt(newString[0]);
+
+    for (let i = 1; i < newString.length; i += 2) {
+        const operator = newString[i];
+        const operand = parseInt(newString[i + 1]);
+
+        if (operator === '+') {
+            result += operand;
+        } else if (operator === '-') {
+            result -= operand;
+        }
+    }
+
+    return result;
+}
