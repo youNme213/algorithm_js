@@ -1,0 +1,19 @@
+function solution(spell, dic) {
+    let answer = 2;
+    for(arr of dic){
+        let numberMatches = 0
+        const string = arr.split('');
+
+        for(let i = 0; i < spell.length; i++){
+            if(string.includes(spell[i])){
+                numberMatches++;
+            }
+        }
+
+        if (numberMatches === spell.length){
+            answer = 1;
+        }
+
+    }
+    return answer;
+}
