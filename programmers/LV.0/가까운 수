@@ -1,0 +1,15 @@
+function solution(array, n) {
+    const newArr = [...array];
+    newArr.sort((a,b) => a - b);
+
+    const differenceNumber = [];
+
+    for (arr of newArr){
+        differenceNumber.push(Math.abs(n - arr));
+    }
+
+    const min = Math.min(...differenceNumber);
+    const minIndex = differenceNumber.indexOf(min);
+
+    return newArr[minIndex];
+}
