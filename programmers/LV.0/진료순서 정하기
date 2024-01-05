@@ -1,0 +1,5 @@
+function solution(emergency) {
+    const sortAscending = [...emergency].sort( (a, b) => (b - a) );
+    return emergency
+                    .map(arr => sortAscending.indexOf(arr) + 1);
+}
