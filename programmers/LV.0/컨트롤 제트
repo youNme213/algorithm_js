@@ -1,0 +1,19 @@
+function solution(s) {
+    let answer = 0;
+    let newS = s.split(" ");
+
+    while (true) {
+        const findZIndex = newS.indexOf("Z");
+
+        // Z가 없을 경우
+        if (findZIndex === -1) {
+            answer = newS.map(Number).reduce((a, b) => a + b, 0);
+            return answer;
+        }
+
+        const removeNumIndex = findZIndex - 1;
+        newS.splice(findZIndex, 1);
+        newS.splice(removeNumIndex, 1);
+    }
+
+}
