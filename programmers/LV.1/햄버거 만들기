@@ -1,0 +1,14 @@
+function solution(ingredient) {
+    let answer = 0;
+    let ingredientOrder = [1, 2, 3, 1];
+    
+    for (let i = 0; i <= ingredient.length; i++) {
+        if (ingredient.slice(i, i + ingredientOrder.length).join('') === ingredientOrder.join('')) {
+            ingredient.splice(i, ingredientOrder.length);
+            answer++;
+            i -= ingredientOrder.length;
+        }
+    }
+
+    return answer;
+}
