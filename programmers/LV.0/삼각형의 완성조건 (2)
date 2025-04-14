@@ -1,0 +1,8 @@
+function solution(sides) {
+    const MAX_NUM = Math.max(...sides);
+    const MIN_NUM = Math.min(...sides);
+    
+    const answer =  (MAX_NUM - (MAX_NUM - MIN_NUM)) + (MIN_NUM - 1);
+    
+    return answer;
+}
