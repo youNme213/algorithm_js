@@ -1,0 +1,31 @@
+function solution(keyinput, board) {
+    let crrDot = [0, 0];
+    const [boardWidth, boardHeight] = board;
+
+    for (let mv of keyinput) {
+        switch (mv) {
+            case 'left':
+                if (crrDot[0] > -Math.floor(boardWidth / 2)) {
+                    crrDot[0] -= 1;
+                }
+                break;
+            case 'right':
+                if (crrDot[0] < Math.floor(boardWidth / 2)) {
+                    crrDot[0] += 1;
+                }
+                break;
+            case 'up':
+                if (crrDot[1] < Math.floor(boardHeight / 2)) {
+                    crrDot[1] += 1;
+                }
+                break;
+            case 'down':
+                if (crrDot[1] > -Math.floor(boardHeight / 2)) {
+                    crrDot[1] -= 1;
+                }
+                break;
+        }
+    }
+
+    return crrDot;
+}
